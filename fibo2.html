@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>fibinocci</title>
+<script>
+function fibinocci()
+{
+var f=0;
+var s=1;
+var t;
+var n=document.fibo.sno.value;
+document.write(f+"<br>");
+document.write(s+"<br>");
+for(i=3;i<=n;i++)
+{
+ t=f+s;
+document.write(t+"<br>");
+f=s;
+s=t;
+
+}}
+
+</script>
+</head>
+<body bgcolor=lavender>
+<form name="fibo">
+enter the limit:-
+<input type="number" name="sno">
+<input type="button" value="show"onclick="fibinocci()">
+
+</body>
+</html>
+
